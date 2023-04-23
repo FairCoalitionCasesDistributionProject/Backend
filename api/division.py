@@ -14,7 +14,7 @@ class Division:
     def get_preferences(self):
         return [party.getpreferences() for party in self.parties]
 
-    def get_parties(self):
+    def get_parties(self)->list[Political_party]:
         return self.parties
 
     def add_parties(self, parties):
